@@ -5,7 +5,7 @@
 > 并且性能比较高
 
 ## 二、使用
-1、安装
+### 1、安装
 ```bash
 go install github.com/Lyzin/ftrans
 ```
@@ -15,7 +15,7 @@ go install github.com/Lyzin/ftrans
 ftrans -h
 ```
 
-2、使用
+### 2、使用
 ```bash
 # 进入需要变为文件服务器的目录，执行如下命令
 cd your-file-dir
@@ -23,4 +23,5 @@ cd your-file-dir
 # 启动服务，会默认将当前目录作为文件服务器的目录
 ftrans serve
 ```
-3、浏览器打开[http://your-ip:8000](http://your-ip:8000)，即可看到文件列表
+### 3、查看效果
+浏览器打开[http://your-ip:8000](http://your-ip:8000)，即可看到文件列表
