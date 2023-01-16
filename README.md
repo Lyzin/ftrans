@@ -17,4 +17,4 @@ cd your-file-dir
 # 启动服务，会默认将当前目录作为文件服务器的目录
 ftrans serve
 ```
-3、浏览器打开http://your-ip:8000，即可看到文件列表
+3、浏览器打开[http://your-ip:8000](http://your-ip:8000)，即可看到文件列表
