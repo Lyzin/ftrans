@@ -1,11 +1,11 @@
 ## 一、介绍
 - 在其他语言，比如python3中有`http.server`模块可以实现将一个目录里的文件变为文件服务器，使用浏览器下载
-- 本项目使用go的gin框架，实现了将一个目录快速变为一个文件服务器，使用浏览器快速进行文件下载, 且性能比较高
+- 本项目使用go的gin框架，实现了将一个目录快速变为一个文件服务器，使用浏览器快速进行文件下载，且性能比较高
 
 ## 二、使用
 ### 1、安装
 ```bash
-go install github.com/Lyzin/ftrans
+go install github.com/Lyzin/ftrans@latest
 ```
 #### 1.1 查看本工具帮助信息
 
