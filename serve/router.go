@@ -9,7 +9,8 @@ package serve
 
 import "github.com/gin-gonic/gin"
 
-func InitRouter() *gin.Engine{
+func InitRouter() *gin.Engine {
+	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 	FileServeHandler := FileServe{}
 	r.GET("/", FileServeHandler.FileList)

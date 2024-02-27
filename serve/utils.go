@@ -8,9 +8,10 @@
 package serve
 
 import (
+	"net"
 	"os"
+	"strings"
 )
-
 
 func GetFilePathCurrent() string {
 	currentPath, _ := os.Getwd()
@@ -23,4 +24,14 @@ func ObjIsDir(path string) bool {
 		return false
 	}
 	return s.IsDir()
+}
+
+func GetHostIp() string {
+	conn, err := net.Dial("udp", "8.8.8.8:53")
+	if err != nil {
+		return ""
+	}
+	addr := conn.LocalAddr().(*net.UDPAddr)
+	ip := strings.Split(addr.String(), ":")[0]
+	return ip
 }
