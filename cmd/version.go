@@ -16,7 +16,7 @@ var versionCmd = &cobra.Command{
 	Short: "版本信息",
 	Long:  `查看版本信息`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("ftrans@v1.1.3 by liuyang")
+		fmt.Println("ftrans@v1.1.4 by liuyang")
 	},
 }
 
