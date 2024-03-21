@@ -30,7 +30,7 @@ func InitRouter() *gin.Engine {
 			c.Status(http.StatusNotModified)
 			return
 		}
-		c.Header("Cache-Control", "no-cache")
+		c.Header("Cache-Control", "no-store")
 		c.Header("ETag", eTag)
 		c.Next()
 	})
