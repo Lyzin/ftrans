@@ -13,6 +13,12 @@ func InitRouter() *gin.Engine {
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 	FileServeHandler := FileServe{}
+
+	// 添加中间件
+	r.Use(func(c *gin.Context) {
+		c.Header("Cache-Control", "no-cache")
+	})
+
 	r.GET("/", FileServeHandler.FileList)
 	r.GET("/:file/*action", FileServeHandler.FileDownLoadFile)
 	return r
